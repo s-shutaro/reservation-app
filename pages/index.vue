@@ -1,11 +1,22 @@
 <template>
-  <Tutorial />
+  <div id="app">
+  <Header />
+  <Content/>
+  </div>
 </template>
 
 <script lang="ts">
-import Vue from 'vue'
+import { Vue, Component } from 'vue-property-decorator';
+import Header from '../components/Header.vue';
+import Content from '../components/Content.vue';
 
-export default Vue.extend({
-  name: 'IndexPage',
+@Component({
+  components: {
+    Header,
+    Content
+  }
 })
+export default class App extends Vue {}
 </script>
+
+<style src="../css/styles.css"></style>
