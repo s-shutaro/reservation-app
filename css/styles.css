@@ -1,0 +1,13 @@
+/* 緑ベースの配色 */
+.header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .content {
+    padding: 20px;
+    background-color: #f9f9f9;
+  }
+  
